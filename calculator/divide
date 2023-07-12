@@ -1,0 +1,14 @@
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+//"Long" data type is for numbers that exceed the maximum amount of digits allowed by RAM.
+    long x = get_long("x: ");
+    long y = get_long("y: ");
+
+//"Float" data type allows for decimal points. "Double" data type is twice as accurate. Intigers must be declared proactively, before function or within.
+    double z = (double) x / (double) y;
+//"%f" is a placeholder for a floating integer. The ".20" indicates a more precise decimal. Placeholder is declared with "z".
+    printf("%.10f\n", z);
+}
